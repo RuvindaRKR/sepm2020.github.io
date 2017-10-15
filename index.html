@@ -76,7 +76,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Milestones</h2>
+            <h2 class="section-heading">Domain</h2>
             <h3 class="section-subheading text-muted">Location Based Garbage Management System with IOT for Smart City</h3>
           </div>
         </div>
@@ -87,6 +87,87 @@
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Literature survey</h4>
+            <p class="text-muted" align="justify">
+			<b>Smart Bin Implementation for Smart Cities</b><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This research is focused on creating optimal changes in the conventional methodology of waste collection. This is done by creating a smart bin that will upload the fill levels via SMS. SMS received from the GSM modules of the dustbin is taken in the form of text files. The text file is connected to the excel sheets. The updated values of the dustbin level are taken to form a real time smart bin status. The excel application designed creates a real-time dashboard along with a time series graph which shows the current trend as well as the historical trend of waste level in that particular smart bin. The data collected is then analyzed to predict when specific bins gets filled up in the future.
+			<br><br>
+			<b>Cruisers: A Public Automotive Sensing Platform for Smart Cities</b>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			This research introduces Cruisers, an automotive sensing platform for smart cities, which is developed based on the following ideas. 
+<br>•	Garbage collecting trucks are used as host automobiles to accommodate sensors 
+<br>•	3G cellular communication network is used to wirelessly deliver sensed data directly to servers 
+<br>•	Proxy servers are adopted to convert the format of sensed data to required ones. 
+<br>The technology consists of a collection of sensor nodes installed into the same number of garbage collecting trucks, one proxy server and one data server. Java program is developed to control the sensor nodes. An iOS application is also developed to demonstrate the sensing process and the covered area. 
+
+		<br><br><b>IOT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application </b>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paper aims at providing an IOT based solution to solve the problems faced by the present solid waste management system. By building an IOT based system, solid waste can be tracked, collected, and managed easily by automating and monitoring. Sensor data collected from the garbage bins can be sent to a gateway using LoRa technology. Data from various garbage bins are collected by the gateway and sent to the cloud over the Internet using the MQTT (Message Queue Telemetry Transport) protocol. The main advantage of this system is the use of LoRa technology for data communication which enables long distance data transmission along with low power consumption. They use the data collected to analyze and generate reports on the amount of garbage collected and the types of garbage collected.
+			
+			<br><br><b>Top–k Query based Dynamic Scheduling for IOT-enabled Smart City Waste Collection </b>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paper proposes a system architecture to achieve dynamic waste collection and delivery to processing plants. This is done using a top-k query based dynamic scheduling model. In implementation the Smart City is divided into multiple sectors which cover the entire city area. Each sector contains a number of multiple intermediate waste depots, which are temporary waste storage areas. Further waste processing is done on garbage tips located at the edge of the city. Low capacity garbage trucks are used to collect garbage from bins and store them in waste depots. High capacity garbage trucks are used to transfer the garbage from garbage depots to garbage tips. Cloud middleware collects sensor data and provide them to the system. Dynamic scheduling algorithm is used to locate the first available truck which can load waste from the filled bins. A route for the truck is created according to the gathered information using top-k query.
+			
+			</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Research Gap</h4>
+            <p class="text-muted" align="justify">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most research papers have implemented garbage bins, but they lack several key features.This paper introduces an Implementation of Automated Management System for an Optimized Waste Collection System.<br>    
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOT Based Smart Garbage alert system using Arduino UNO has used an arduino board, this poses problems because arduino does not support multi-threaded programming. To avoid this Raspberry pie zero development board is implemented, which is about the same price as the Arduino Uno and supports multithreaded programming.   
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the papers have used only one level measuring sensor in their bins. This poses a problem because garbage levels can be at different levels at different areas of the bin. To avoid this, four sensors are implemented which will be much more accurate at reading the actual level of the garbage level.<br>      
+  
+<br> Different research papers have used different methods to transfer data from the bin.<br> 
+•	Smart Bin Implementation for Smart Cities has used GSM technology. <br>  
+•	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used GSM technology.  <br> 
+•	IoT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application has used LORA technology.  <br> 
+•	IOT Based Smart Garbage alert system using Arduino UNO has used Wi-Fi<br> 
+•	 Solid Waste Management Architecture using Wireless Sensor Network technology has used RF and GSM technology.  <br> 
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of these papers has used GSM technology. When using GSM there is the hassle of through registering to a subscriber and has to pay for the services. For this project Wi-Fi was chosen due to the fact that in a smart city everything would be connected through Wi-Fi. So, this system can easily integrate with the existing communication system.  
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Addition to the technologies mentioned, this proposed system will contain these following functions: 
+<br> •	A hand gesture system to open and close the bin door  
+<br> •	An auto lock feature to lock the bin at 100% capacity  
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After the sensor data has been transferred different papers have used different methods to manipulate data,  
+Smart Bin Implementation for Smart Cities has used an Excel application, which has some weaknesses such as   
+<br> •	Vulnerable to fraud  
+<br> •	Susceptible to trivial human errors  
+<br> •	Difficult to troubleshoot or test  
+<br> •	Obstructive to regulatory compliance  
+<br> •	Not designed for collaborative work  
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the other papers has used cloud based systems to analyze and monitor data. There is no error in doing so as this is the best method to do this currently. So This paper has also taken the cloud based approach.  
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud Computing Based Smart Garbage Monitoring System, Smart Bin Implementation for Smart Cities has used an android application to notify cleaners, a Cloud Computing Based Smart Garbage Monitoring System has used windows application and some uses only SMS notifications. This project improves upon this to give notifications through the android application and SMS notifications for better efficiency.   
+
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Though most papers have focused on optimizing garbage collection, based on research papers mentioned the methods proposed on this paper is better than most of the algorithms the above mentioned papers provide.  
+
+<br> •	Cloud Computing Based Smart Garbage Monitoring System proposes a route calculation between only two static points.  
+<br> •	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used a method that divides the city into sectors, this method can waste fuel and time.  
+
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The method proposed on this paper is a predictive system that predicts and clean bins that reaches certain levels even before they reach it.  
+</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Research Problem</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+        </div>
+		<div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Research Objectives</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
@@ -94,7 +175,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
+            <h4 class="service-heading">Methodology</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
@@ -102,7 +183,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
+            <h4 class="service-heading">Technologies Used</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
         </div>
