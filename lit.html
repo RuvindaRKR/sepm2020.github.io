@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/drawer.css" rel="stylesheet">
+</head>
+<body>
+
+<h2>Bottom Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Most research papers have implemented garbage bins, but they lack several key features.This paper introduces an Implementation of Automated Management System for an Optimized Waste Collection System.
+     IOT Based Smart Garbage alert system using Arduino UNO has used an arduino board, this poses problems because arduino does not support multi-threaded programming. To avoid this Raspberry pie zero development board is implemented, which is about the same price as the Arduino Uno and supports multithreaded programming.
+     Most of the papers have used only one level measuring sensor in their bins. This poses a problem because garbage levels can be at different levels at different areas of the bin. To avoid this, four sensors are implemented which will be much more accurate at reading the actual level of the garbage level.
+
+Different research papers have used different methods to transfer data from the bin.
+•	Smart Bin Implementation for Smart Cities has used GSM technology.
+•	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used GSM technology.
+•	IoT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application has used LORA technology.
+•	IOT Based Smart Garbage alert system using Arduino UNO has used Wi-Fi
+•	Solid Waste Management Architecture using Wireless Sensor Network technology has used RF and GSM technology.
+
+     Most of these papers has used GSM technology. When using GSM there is the hassle of through registering to a subscriber and has to pay for the services. For this project Wi-Fi was chosen due to the fact that in a smart city everything would be connected through Wi-Fi. So, this system can easily integrate with the existing communication system.
+     In Addition to the technologies mentioned, this proposed system will contain these following functions:
+•	A hand gesture system to open and close the bin door
+•	An auto lock feature to lock the bin at 100% capacity
+      After the sensor data has been transferred different papers have used different methods to manipulate data, Smart Bin Implementation for Smart Cities has used an Excel application, which has some weaknesses such as
+•	Vulnerable to fraud
+•	Susceptible to trivial human errors
+•	Difficult to troubleshoot or test
+•	Obstructive to regulatory compliance
+•	Not designed for collaborative work
+     Most of the other papers has used cloud based systems to analyze and monitor data. There is no error in doing so as this is the best method to do this currently. So This paper has also taken the cloud based approach.
+      Cloud Computing Based Smart Garbage Monitoring System, Smart Bin Implementation for Smart Cities has used an android application to notify cleaners, a Cloud Computing Based Smart Garbage Monitoring System has used windows application and some uses only SMS notifications. This project improves upon this to give notifications through the android application and SMS notifications for better efficiency.
+     Though most papers have focused on optimizing garbage collection, based on research papers mentioned the methods proposed on this paper is better than most of the algorithms the above mentioned papers provide.
+•	Cloud Computing Based Smart Garbage Monitoring System proposes a route calculation between only two static points.
+•	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used a method that divides the city into sectors, this method can waste fuel and time.
+     The method proposed on this paper is a predictive system that predicts and clean bins that reaches certain levels even before they reach it.Smart Bin Implementation for Smart Cities
+     This research is focused on creating optimal changes in the conventional methodology of waste collection. This is done by creating a smart bin that will upload the fill levels via SMS. SMS received from the GSM modules of the dustbin is taken in the form of text files. The text file is connected to the excel sheets. The updated values of the dustbin level are taken to form a real time smart bin status. The excel application designed creates a real-time dashboard along with a time series graph which shows the current trend as well as the historical trend of waste level in that particular smart bin. The data collected is then analyzed to predict when specific bins gets filled up in the future.
+
+Cruisers: A Public Automotive Sensing Platform for Smart Cities
+      This research introduces Cruisers, an automotive sensing platform for smart cities, which is developed based on the following ideas.
+•	Garbage collecting trucks are used as host automobiles to accommodate sensors
+•	3G cellular communication network is used to wirelessly deliver sensed data directly to servers
+•	Proxy servers are adopted to convert the format of sensed data to required ones.
+The technology consists of a collection of sensor nodes installed into the same number of garbage collecting trucks, one proxy server and one data server. Java program is developed to control the sensor nodes. An iOS application is also developed to demonstrate the sensing process and the covered area.
+
+IOT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application
+     This paper aims at providing an IOT based solution to solve the problems faced by the present solid waste management system. By building an IOT based system, solid waste can be tracked, collected, and managed easily by automating and monitoring. Sensor data collected from the garbage bins can be sent to a gateway using LoRa technology. Data from various garbage bins are collected by the gateway and sent to the cloud over the Internet using the MQTT (Message Queue Telemetry Transport) protocol. The main advantage of this system is the use of LoRa technology for data communication which enables long distance data transmission along with low power consumption. They use the data collected to analyze and generate reports on the amount of garbage collected and the types of garbage collected.
+
+Top–k Query based Dynamic Scheduling for IOT-enabled Smart City Waste Collection
+     This paper proposes a system architecture to achieve dynamic waste collection and delivery to processing plants. This is done using a top-k query based dynamic scheduling model. In implementation the Smart City is divided into multiple sectors which cover the entire city area. Each sector contains a number of multiple intermediate waste depots, which are temporary waste storage areas. Further waste processing is done on garbage tips located at the edge of the city. Low capacity garbage trucks are used to collect garbage from bins and sto</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
