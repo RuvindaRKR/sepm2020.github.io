@@ -12,7 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -82,110 +84,423 @@
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-pencil-square fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Literature survey</h4>
-            <p class="text-muted" align="justify">
-			<b>Smart Bin Implementation for Smart Cities</b><br>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This research is focused on creating optimal changes in the conventional methodology of waste collection. This is done by creating a smart bin that will upload the fill levels via SMS. SMS received from the GSM modules of the dustbin is taken in the form of text files. The text file is connected to the excel sheets. The updated values of the dustbin level are taken to form a real time smart bin status. The excel application designed creates a real-time dashboard along with a time series graph which shows the current trend as well as the historical trend of waste level in that particular smart bin. The data collected is then analyzed to predict when specific bins gets filled up in the future.
-			<br><br>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Literature Survey</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+            <b>Smart Bin Implementation for Smart Cities</b><br>
+				This research is focused on creating optimal changes in the conventional methodology of waste collection. This is done by creating a smart bin that will upload the fill levels via SMS. SMS received from the GSM modules of the dustbin is taken in the form of text files. The text file is connected to the excel sheets. The updated values of the dustbin level are taken to form a real time smart bin status. The excel application designed creates a real-time dashboard along with a time series graph which shows the current trend as well as the historical trend of waste level in that particular smart bin. The data collected is then analyzed to predict when specific bins gets filled up in the future.<br><br>
+
 			<b>Cruisers: A Public Automotive Sensing Platform for Smart Cities</b>
 			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			This research introduces Cruisers, an automotive sensing platform for smart cities, which is developed based on the following ideas. 
-<br>•	Garbage collecting trucks are used as host automobiles to accommodate sensors 
-<br>•	3G cellular communication network is used to wirelessly deliver sensed data directly to servers 
-<br>•	Proxy servers are adopted to convert the format of sensed data to required ones. 
-<br>The technology consists of a collection of sensor nodes installed into the same number of garbage collecting trucks, one proxy server and one data server. Java program is developed to control the sensor nodes. An iOS application is also developed to demonstrate the sensing process and the covered area. 
+			This research introduces Cruisers, an automotive sensing platform for smart cities, which is developed based on the following ideas.</b>
+			<br>•	Garbage collecting trucks are used as host automobiles to accommodate sensors
+			<br>•	3G cellular communication network is used to wirelessly deliver sensed data directly to servers
+			<br>•	Proxy servers are adopted to convert the format of sensed data to required ones.
+			<br>The technology consists of a collection of sensor nodes installed into the same number of garbage collecting trucks, one proxy server and one data server. Java program is developed to control the sensor nodes. An iOS application is also developed to demonstrate the sensing process and the covered area.
 
-		<br><br><b>IOT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application </b>
-			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paper aims at providing an IOT based solution to solve the problems faced by the present solid waste management system. By building an IOT based system, solid waste can be tracked, collected, and managed easily by automating and monitoring. Sensor data collected from the garbage bins can be sent to a gateway using LoRa technology. Data from various garbage bins are collected by the gateway and sent to the cloud over the Internet using the MQTT (Message Queue Telemetry Transport) protocol. The main advantage of this system is the use of LoRa technology for data communication which enables long distance data transmission along with low power consumption. They use the data collected to analyze and generate reports on the amount of garbage collected and the types of garbage collected.
+			The technology consists of a collection of sensor nodes installed into the same number of garbage collecting trucks, one proxy server and one data server. Java program is developed to control the sensor nodes. An iOS application is also developed to demonstrate the sensing process and the covered area.
+
+			<br><br><b>IOT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application|</b>
+			<br>This paper aims at providing an IOT based solution to solve the problems faced by the present solid waste management system. By building an IOT based system, solid waste can be tracked, collected, and managed easily by automating and monitoring. Sensor data collected from the garbage bins can be sent to a gateway using LoRa technology. Data from various garbage bins are collected by the gateway and sent to the cloud over the Internet using the MQTT (Message Queue Telemetry Transport) protocol. The main advantage of this system is the use of LoRa technology for data communication which enables long distance data transmission along with low power consumption. They use the data collected to analyze and generate reports on the amount of garbage collected and the types of garbage collected.
+
+			<br><br><b>Top–k Query based Dynamic Scheduling for IOT-enabled Smart City Waste Collection</b>
+			<br>This paper proposes a system architecture to achieve dynamic waste collection and delivery to processing plants. This is done using a top-k query based dynamic scheduling model. In implementation the Smart City is divided into multiple sectors which cover the entire city area. Each sector contains a number of multiple intermediate waste depots, which are temporary waste storage areas. Further waste processing is done on garbage tips located at the edge of the city. Low capacity garbage trucks are used to collect garbage from bins and store them in waste depots. High capacity garbage trucks are used to transfer the garbage from garbage depots to garbage tips. Cloud middleware collects sensor data and provide them to the system. Dynamic scheduling algorithm is used to locate the first available truck which can load waste from the filled bins. A route for the truck is created according to the gathered information using top-k query.
 			
-			<br><br><b>Top–k Query based Dynamic Scheduling for IOT-enabled Smart City Waste Collection </b>
-			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paper proposes a system architecture to achieve dynamic waste collection and delivery to processing plants. This is done using a top-k query based dynamic scheduling model. In implementation the Smart City is divided into multiple sectors which cover the entire city area. Each sector contains a number of multiple intermediate waste depots, which are temporary waste storage areas. Further waste processing is done on garbage tips located at the edge of the city. Low capacity garbage trucks are used to collect garbage from bins and store them in waste depots. High capacity garbage trucks are used to transfer the garbage from garbage depots to garbage tips. Cloud middleware collects sensor data and provide them to the system. Dynamic scheduling algorithm is used to locate the first available truck which can load waste from the filled bins. A route for the truck is created according to the gathered information using top-k query.
-			
-			</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Research Gap</h4>
-            <p class="text-muted" align="justify">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most research papers have implemented garbage bins, but they lack several key features.This paper introduces an Implementation of Automated Management System for an Optimized Waste Collection System.<br>    
+			<br><br><b>Cloud Computing Based Smart Garbage Monitoring System</b>
+<br>
+In this paper, a Smart Bin is proposed with a network of dustbins which integrates the idea of IOT with Wireless Sensor Networks. They also propose a concept of a network of smart garbage bins based on the Stack Based Front End approach of integrating Wireless Sensor Network with the Cloud computing and discuss how Machine Learning techniques like Decision Forest Regression can be applied to the sensor data leveraged by the system to gain useful insights to improve the efficiency of the garbage monitoring.  
+<br>Hardware used:			     
+<br>•	WSN Motes
+<br>•	IRIS
+<br>•	Ultrasonic sensors
+<br><br>Software used:
+<br>•	TinyOs-2.1.2
+<br>•	NesC
+<br>•	Azure IOT Hub   			        
 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOT Based Smart Garbage alert system using Arduino UNO has used an arduino board, this poses problems because arduino does not support multi-threaded programming. To avoid this Raspberry pie zero development board is implemented, which is about the same price as the Arduino Uno and supports multithreaded programming.   
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the papers have used only one level measuring sensor in their bins. This poses a problem because garbage levels can be at different levels at different areas of the bin. To avoid this, four sensors are implemented which will be much more accurate at reading the actual level of the garbage level.<br>      
-  
-<br> Different research papers have used different methods to transfer data from the bin.<br> 
-•	Smart Bin Implementation for Smart Cities has used GSM technology. <br>  
-•	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used GSM technology.  <br> 
-•	IoT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application has used LORA technology.  <br> 
-•	IOT Based Smart Garbage alert system using Arduino UNO has used Wi-Fi<br> 
-•	 Solid Waste Management Architecture using Wireless Sensor Network technology has used RF and GSM technology.  <br> 
+<br>This paper uses Azure Machine Learning web service to deploy a trained model as a predictive web service. This system predicts which garbage bins fill up at which points in time.
+       
+	   
+<br><br><b>IOT Based Smart Garbage alert system using Arduino UNO</b>
+<br>
+This paper proposes a smart alert system for garbage clearance by giving an alert signal to the municipal web server for instant cleaning of dustbin with proper verification based on level of garbage filling. The development board used is an Arduino UNO. The process involved is ultrasonic sensors checking garbage bin levels and sending it to the municipal council. After cleaning the dustbin, the driver confirms that the task is complete using a RFID Tag. After the cleaning is verified, the information is sent to the server.
+<br>An Android application is developed and linked to a web server to send the alerts and remote monitor worker progress. The notifications are sent to the Android application using Wi-Fi module.
+<br>The e-monitoring system has two parts: 
+<br>• Embedded system: It comprises of an RFID reader, a microcontroller, a Liquid Crystal Display (LCD) and a GPRS segment. 
+<br>• Web based software system Interface: It comprises of a GPRS module, a Central Server, a Database Server and a Web server.  The Figure reveals the block diagram of the web centered software system.
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of these papers has used GSM technology. When using GSM there is the hassle of through registering to a subscriber and has to pay for the services. For this project Wi-Fi was chosen due to the fact that in a smart city everything would be connected through Wi-Fi. So, this system can easily integrate with the existing communication system.  
+<br><br><b>	Solid Waste Management Architecture using Wireless Sensor Network 	Technology</b>
+<br>
+This paper is focused on the on-site handling and storage processes and on the transfer process, with the main topic at developing a smart solid waste management system capable to ensure the public health with costs reduction and quality improvement. In order to enhance the efficiency of solid wastes on-site collection and transfer, an innovative solution for the monitoring and management system has been proposed. A Wireless Sensor Network (WSN) has been developed to improve the garbage bins monitoring process.
+ 
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Addition to the technologies mentioned, this proposed system will contain these following functions: 
-<br> •	A hand gesture system to open and close the bin door  
-<br> •	An auto lock feature to lock the bin at 100% capacity  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After the sensor data has been transferred different papers have used different methods to manipulate data,  
-Smart Bin Implementation for Smart Cities has used an Excel application, which has some weaknesses such as   
-<br> •	Vulnerable to fraud  
-<br> •	Susceptible to trivial human errors  
-<br> •	Difficult to troubleshoot or test  
-<br> •	Obstructive to regulatory compliance  
-<br> •	Not designed for collaborative work  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the other papers has used cloud based systems to analyze and monitor data. There is no error in doing so as this is the best method to do this currently. So This paper has also taken the cloud based approach.  
+<br>The main components of the developed architecture on the SEA project are decomposed into three layers.
+<br>•	The first layer is composed by sensor nodes, which need for the filling monitoring and provide short-range transmissions through RF technology.
+<br>•	The second layer is composed by communication modules, which provide long-range transmission through GSM/GPRS.
+<br>•	The third layer is composed by servers, which provide data storage and supervisor modules.
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud Computing Based Smart Garbage Monitoring System, Smart Bin Implementation for Smart Cities has used an android application to notify cleaners, a Cloud Computing Based Smart Garbage Monitoring System has used windows application and some uses only SMS notifications. This project improves upon this to give notifications through the android application and SMS notifications for better efficiency.   
+<br><br>
+Most research papers have implemented garbage management system, but they lack several key features. This paper introduces an Implementation of Automated Management System for an Optimized Waste Collection System.   
+   
+<br>Most of the other papers has used cloud based systems to analyze and monitor data. We find no error in doing so as this is the best method to do this currently. So, we have also taken the cloud based approach.  
 
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Though most papers have focused on optimizing garbage collection, based on research papers mentioned the methods proposed on this paper is better than most of the algorithms the above mentioned papers provide.  
+<br>Cloud Computing Based Smart Garbage Monitoring System, Smart Bin Implementation for Smart Cities [3] has used an android application to notify cleaners, a Cloud Computing Based Smart Garbage Monitoring System has used windows application and some uses only SMS notifications. This project improves upon this to give notifications through the android application for better efficiency.   
 
-<br> •	Cloud Computing Based Smart Garbage Monitoring System proposes a route calculation between only two static points.  
-<br> •	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used a method that divides the city into sectors, this method can waste fuel and time.  
+<br>Though most papers have focused on optimizing garbage collection, based on research papers mentioned the methods proposed on this paper is better than most of the algorithms the above-mentioned papers provide.  
 
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The method proposed on this paper is a predictive system that predicts and clean bins that reaches certain levels even before they reach it.  
-</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Research Problem</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+<br>•	Cloud Computing Based Smart Garbage Monitoring System proposes a route calculation between only two static points.  
+<br>•	Cruisers: A Public Automotive Sensing Platform for Smart Cities has used a method that divides the city into sectors, this method can waste fuel and time.  
+
+<br>The method proposed on this paper is a predictive system that predicts and clean bins that reaches certain levels even before they reach it.  
+
+		</p>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Literature Survey</h4>
+        <p class="text-muted" align="justify"></p>
+			
+          </div>
+		  
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal1">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
+            </span>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Research Gap</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+			Different papers have used different methods to  manipulate data,
+			Smart Bin Implementation for Smart Cities has used an Excel application, which has some weaknesses such as,
+			<br>•	Vulnerable to fraud
+			<br>•	Susceptible to trivial human errors
+			<br>•	Difficult to troubleshoot or test
+			<br>•	Obstructive to regulatory compliance
+			<br>•	Not designed for collaborative work
+			<br>This paper only uses the historical data collected to predict when bins are getting filled in the near future.
+			Cruisers: A Public Automotive Sensing Platform for Smart Cities (2016) uses a SOX server which implements publishing and subscribing functions for sensor data based on XMPP. This paper collect data, but do not use them for analytical purposes.
+			IoT Based Solid Waste Management System A conceptual approach with an architectural solution as a smart city application (2016) uses the data collected to analyse and generate reports on the amount of garbage collected and the types of garbage collected, but do not use them to forcast furure amounts.
+			Top–k Query based Dynamic Scheduling for IoT-enabled Smart City Waste Collection (2015) paper mainly forcuses on optimizing truck routes. It does not look into the garbage level predictions.
+			Cloud Computing Based Smart Garbage Monitoring System (2016) paper also predicts which bins fill up at which points in time using Azure Machine Learning web service.
+			IOT Based Smart Garbage alert system using Arduino UNO (2016) uses an Arduino Uno and RFID based system to give real time alerts to the municipal council. This system does not use any predictive algorithms.
+			The papers mentioned above either does not use analytical algorithms or just predicts future bin levels. This paper not only predicts future bin levels, but forcasts future amounts of solid waste generated for periods of time and estimates profits to be gained by recycling thos amounts.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Research Gap</h4>
+        <p class="text-muted" align="justify"></p>
+			
+          </div>
+
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal2">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-question-circle-o fa-stack-1x fa-inverse"></i>
+            </span>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Research Problem</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+			At present, solid waste management in Sri Lanka is not at an adequate level. Municipal councils of urban cities only collect a small portion of the total waste generated. Referring to the National Solid Waste Management Report for 2007 of the Japan International Cooperation Agency, the total amount of garbage collected in 311 local authorities was 2838 metric tons per day, which amounts to an annual garbage collection of 1.04 million metric tons per year. This is only 23% of the total garbage generated Colombo District. This means that nearly ¾ of the garbage generated leads to surface and groundwater pollution. 
+			With this much waste generated and no way of collecting them, garbage bins fill up instantly. This leads to people turning to open waste dumping. Open waste dumping is the main source of all of the below mentioned problems.
+			<br>•	Increase of acidic levels of ground water, which is water pollution.
+			<br>•	Buildup of greenhouse gases such as methane and carbon dioxide, leading to air pollution and climate change.
+			<br>•	Loss of wetland habitats
+			<br>•	Spread of diseases such as Dengue fever, malaria, etc. 
+			<br>•	Attraction of wild animals  
+			<br>In spite of the statistics mentioned above, Sri Lankan government spends a substantial amount of money on solid waste management. An estimation made in 2004 revealed that solid waste management expenditure ranges from a high Rs. 2000 per metric ton in a Municipal Council to a low Rs. 1,200 per metric ton in an Urban Council. So it could be estimated that Sri Lankan government spends an amount between 1.2 to 2 billion rupees on daily collection and disposal of garbage.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Research Problem</h4>
+        <p class="text-muted" align="justify">
+		
+		</p>
+			
+          </div>		  
+	  
+        </div>  
+    
+		   
+
 		<div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+		          <div class="col-md-4">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal3">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-map-pin fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Research Objectives</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Research Objective</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+		   <b>Main Objectives</b>
+		  <br>
+
+<br>•	Build a cost-effective garbage management system for the municipal council that will help them keep the city a cleaner place. 
+<br>•	Build a system (Garbage bin/ android application/ website) that will encourage people to use garbage bins instead of littering.  
+<br><br><b>Specific Objectives</b>
+<br>
+•	Build a website and client application that inspires clients to use the system, gives proper knowledge on how to use the system and integrate it into their day to day lives. 
+<br>•	Give the government an estimate of the profit to be gained from recycling the amount of garbage collected from each region. Give incentive for the government to setup more recycling stations.
+<br>•	Give the government statistical values of how much of specific types of materials, such as plastic, glass, etc, is being used in each region. 
+<br>•	Give the government the foundation statistics to implement techniques to reduce the use of non-ecofriendly materials like plastic and have a way to test if the implemented techniques are successful. 
+<br>•	Provide an intelligent feedback analytical system to provide better service to users.
+<br>•	Build a more user friendly, user attractive trash can which can be used to motivate the citizens to use it more often.
+<br>•	Give alerts and warning when there is an error without using human inspections which will reduce the needed number of workforce employees. 
+
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Research Objective</h4>
+        <p class="text-muted" align="justify">
+		
+		</p>
+			
           </div>
+		
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Methodology</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Methodology</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+		  		 <b>The Smart Bin</b>
+<br>The bin contains four ultrasonic sensors, a servo motor and a
+Raspberry Pie Zero W development board. Two ultrasonic
+sensors and the servo motor is dedicated to detect hand
+movements and open/close the bin door. The bin door will lock
+if the bin is full. An LED indicator will indicate if the bin is full
+or not visually. The other two ultrasonic sensors take the
+garbage level readings each time the bin door is opened and
+closed, and upload it to the server through the development
+board. The readings are taken as such: three readings taken from
+each sensor, average of the three readings are uploaded to the
+server. The exact level is taken from the average of the two
+uploaded values. Sensors can be disabled in the time of
+cleaning. If a bin reaches 80% level, an SMS will be sent to specified numbers. Since four bins are implemented on a single
+location, one Raspberry Pie board is used to run all four bins.
+<br>
+<br>
+<b>The Client and Admin Dashboard</b>
+</br>
+This has a home page which has all the information
+about the product, contact info and a link to the dashboard. The
+dashboard has two components, admin dashboard and the client
+dashboard. The login info provided decides which dashboard is
+loaded. The admin dashboard has a map which displays Active
+truck routes and status of all active bins. The admin can add or
+remove bins and identify sensor faults in bins. The user
+feedback can be reviewed. The admin has the capability to
+register new admins and add/ delete numbers from the SMS
+notification list. There is a feature to view all the different types
+of reports generated and manage their profile. Before logging
+in the client has the capability to register a new account to login
+to the client dashboard. In this, the client can check bin status,
+give feedback regarding the system, lodge complaints, request
+bins on specific locations and edit profile.
+<br><br>
+<b>The Workforce Application</b>
+<br>
+The application has a map that shows the current
+levels of all the bins. This receives the calculated route
+(mentioned in the route calculation) at the designated time slots
+and when there is a special bin to be cleaned. The cleaner has
+to press start when starting the round and press end when the
+shift ends. The time slots and durations are recorded. The app
+has the capability to turn off bin sensors when a cleaner is ready
+to clean.
+<br><br>
+<b></b>
+<b>The Client Application</b><br>
+This application shows a map with all the available
+bins. The client can search for the nearest bin and calculate the
+nearest path to it. The client can lodge complaints and give
+feedback regarding the system. Client can request bins.
+<br><br>
+<b>The Route Calculation</b>
+<br>
+In a one day, three statics times are set for the trucks to do
+rounds. At each of these times, the server checks for bins that
+are 80% filled and bins that will be filled to 80% in the next 3
+1/2 hour, these locations are added as waypoints to Google
+maps API to calculate the quickest route. The interpolation
+algorithm is used to predict the bin waypoints for the next 3 1/2
+hours. This formula takes the past data of bin levels for
+the exact times from the database and predicts what level each
+bin will have at that exact time of day. If the predicted value is
+above 80%, that bin is added as a waypoint. For all the routes,
+the end point is set as the disposal site. The map is divided
+into several regions, and workforce are assigned to different
+regions. If a bin that is not on the route fills to 80%, that bin is
+immediately updated as waypoint on the active truck's route. If
+two trucks are simultaneously active, the waypoint is added to
+the first starting truck.
+<br><br>
+<b>The Analysis of Municipal Solid Waste Generation</b>
+<br>
+Four bins for each type (biodegradable, plastic, paper
+and glass) of garbage will placed on each location. The amount
+of garbage types used from each region is recorded. With
+enough data inputs, a calculation is done to find which regions
+produce the most amount of garbage from each type. Then
+predictions are made as to the levels of garbage produced in the
+future months and years. Reports of these statistics are
+provided to the municipal council to take action. If the type of
+garbage is not eco-friendly, steps can be taken to reduce the use
+of these types on these regions. These steps may include setting
+up more recycling stations, introducing alternatives to the noneco-
+friendly types used in the regions, business opportunities,
+etc. Ultimately these readings are used to check the
+effectiveness of the implemented steps. The weights calculated
+from each type is used to calculate the profit that can be made
+from recycling these garbage types. These reports can be an
+incentive for the municipal council to set up more recycling
+stations.
+<br><br>
+<b>The Statistical Fault Detection of Sensors</b>
+<br>
+This component identifies malfunctions in the
+ultrasonic sensors which functions as the garbage level sensors.
+These malfunctions include the sensors sending bogus values
+and sensors being inoperative. First a base value is determined
+from collected test records in the database. Every time two
+levels are sent from each sensor the difference between these
+levels is checked against the base value to see if it is lower. If
+the value is lower the sensors are functioning normally. If the
+value is higher, this value is checked against the database to see
+if the value is similar to previous records at the exact time.
+<br><br>
+<b>The Analysis of Bin Requirements</b>
+<br>
+First scenario is when a user requests an additional bin
+on a position which bins already exist, the server refers to the
+previous fill level records of the existing bins, and other bin
+requests to the same position. Considering this two information
+the server determines if an additional bin is necessary.<br>
+Second scenario is when a user requests a bin on a
+position that does not contain pre-existing bins, when the server
+checks for existing bins in a given perimeter. If existing bins are
+identified, these bins are subject to the same calculation
+mentioned above to determine if the requested position requires
+a bin.<br>
+This component includes presenting the initial number
+of bins needed to implement the system on a new city. The
+server updates number of bins active on each region which the
+system is implemented, and monthly calculates the number of
+bins used by the total population in each region. These records
+are used to calculate the number of bins needed to be initially
+implemented on a new city with the specific population.
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Methodology</h4>
+        <p class="text-muted" align="justify"></p>
+			
+          </div>          
+		  
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-4x" data-toggle="modal" data-target="#myModal5">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-scissors fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Technologies Used</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" align="center">Technologies Used</h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted" align="justify">
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+	  </div>
+
+    </div>
+  </div>
+        <h4 class="service-heading">Technologies Used</h4>
+        <p class="text-muted" align="justify"></p>
+			
           </div>
+		  
         </div>
       </div>
     </section>
